@@ -1,0 +1,17 @@
+{
+    "max_disappear" : 10 ,
+    "max_distance" : 175 ,
+    "track_object" : 4 ,
+    "confidence" : 0.4 ,
+    "frame_width" : 400 ,
+    "speed_estimation_zone" : { "A" : 120 , "B" : 160 , "C" : 200 , "D" : 240 } ,
+    "distance" : 16 ,
+    "speed_limit" : 15,
+    "display":true,
+    "model_path": "../MobileSSD/MobileNetSSD_deploy.caffemodel",
+    "prototxt_path": "../MobileSSD/MobileNetSSD_deploy.prototxt",
+    "use_dropbox":false,
+    "dropbox_access_token":"",
+    "output_path": "../output",
+    "csv_name": "log.csv"
+}
