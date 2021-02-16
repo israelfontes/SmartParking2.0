@@ -4,7 +4,6 @@
     "track_object" : 4 ,
     "confidence" : 0.4 ,
     "frame_width" : 400 ,
-    "speed_estimation_zone" : { "A" : 120 , "B" : 160 , "C" : 200 , "D" : 240 } ,
     "distance" : 16 ,
     "speed_limit" : 15,
     "display":true,

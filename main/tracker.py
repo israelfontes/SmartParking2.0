@@ -50,10 +50,14 @@ while True:
             idx = int(detections[0,0,i,1])
             
             if CLASSES[idx] != "car":
-                    continue
+                continue
+            
+            objectID = 'carID: {}'.format(i)
 
             box = detections[0,0,i,3:7] * np.array([W,H,W,H])
-            rects.append(box.astype("int"))
+            rects.append((box.astype("int"), objectID))
+            
+            #[(box,id), (box,id), (box,id)]
 
             print("Confidence: {}".format(detections[0,0,i,2]))
 
@@ -65,7 +69,7 @@ while True:
     for (objectID, centroid) in objects.items():
         # draw both the ID of the object and the centroid of the
         # object on the output frame
-        text = "ID {}".format(objectID)
+        text = objectID
         cv2.putText(frame, text, (centroid[0] - 10, centroid[1] - 10),
             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
         cv2.circle(frame, (centroid[0], centroid[1]), 4, (0, 255, 0), -1)

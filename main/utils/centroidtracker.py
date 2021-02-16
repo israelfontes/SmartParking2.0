@@ -4,23 +4,21 @@ import numpy as np
 
 class CentroidTracker():
     def __init__(self, maxDisappeared=5000):
-
-        self.nextObjectID = 0
         self.objects = OrderedDict()
         self.disappeared = OrderedDict()
-
         self.maxDisappeared = maxDisappeared
     
-    def register(self, centroid):
-        self.objects[self.nextObjectID] = centroid
-        self.disappeared[self.nextObjectID] = 0
-        self.nextObjectID += 1
-    
+    def register(self, centroid, objectID):
+        self.objects[objectID] = centroid
+        self.disappeared[objectID] = 0
+
     def deregister(self, objectID):
         del self.objects[objectID]
         del self.disappeared[objectID]
 
     def update(self, rects):
+        #[(box,id), (box,id), (box,id)]
+
         if len(rects) == 0:
             for objectID in list(self.disappeared.keys()):
                 self.disappeared[objectID] += 1
@@ -31,14 +29,14 @@ class CentroidTracker():
         
         inputCentroids = np.zeros((len(rects),2), dtype="int")
 
-        for(i, (startX, startY, endX, endY)) in enumerate(rects):
+        for(i, ((startX, startY, endX, endY), label)) in enumerate(rects):
             cX = int((startX + endX) / 2.0)
             cY = int((startY + endY) / 2.0)
             inputCentroids[i] = (cX,cY)
         
         if len(self.objects) == 0:
             for i in range(0, len(inputCentroids)):
-                self.register(inputCentroids[i])
+                self.register(inputCentroids[i], rects[i][1]) #label
         else:
             objectIDs = list(self.objects.keys())
             objectCentroids = list(self.objects.values())
@@ -75,6 +73,7 @@ class CentroidTracker():
                         self.deregister(objectID)
             else:
                 for col in unusedCols:
-                    self.register(inputCentroids[col])
+                    centroid = inputCentroids[col]
+                    self.register(centroid,rects[col][1])
 
         return self.objects
