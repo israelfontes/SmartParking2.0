@@ -1,0 +1,20 @@
+2021-06-16T15:00:46.122941000 0.067818s notice: Recursively removing directory /Users/israelfontes/Documents/Projects/SmartParking/main/rethinkdb_data/tmp
+2021-06-16T15:00:46.129027000 0.073677s notice: Initializing directory /Users/israelfontes/Documents/Projects/SmartParking/main/rethinkdb_data
+2021-06-16T15:00:46.129137000 0.073784s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/israelfontes/Documents/Projects/SmartParking/main/rethinkdb_data' did not already exist or is empty.)
+2021-06-16T15:00:46.129170000 0.073817s notice: Running rethinkdb 2.4.1 (CLANG 11.0.3 (clang-1103.0.32.62))...
+2021-06-16T15:00:46.158477000 0.103125s notice: Running on Darwin 20.5.0 x86_64
+2021-06-16T15:00:46.158537000 0.103183s notice: Loading data from directory /Users/israelfontes/Documents/Projects/SmartParking/main/rethinkdb_data
+2021-06-16T15:00:46.372256000 0.316900s info: Automatically using cache size of 100 MB
+2021-06-16T15:00:46.372265000 0.316908s warn: Cache size does not leave much memory for server and query overhead (available memory: 355 MB).
+2021-06-16T15:00:46.372275000 0.316918s warn: Cache size is very low and may impact performance.
+2021-06-16T15:00:46.373947000 0.318590s notice: Listening for intracluster connections on port 29015
+2021-06-16T15:00:46.378478000 0.323122s notice: Listening for client driver connections on port 28015
+2021-06-16T15:00:46.378551000 0.323194s notice: Listening for administrative HTTP connections on port 8080
+2021-06-16T15:00:46.378554000 0.323197s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2021-06-16T15:00:46.378556000 0.323199s notice: Listening on driver addresses: 127.0.0.1, ::1
+2021-06-16T15:00:46.378561000 0.323204s notice: Listening on http addresses: 127.0.0.1, ::1
+2021-06-16T15:00:46.378565000 0.323209s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2021-06-16T15:00:46.378570000 0.323213s notice: Server ready, "MacBook_Pro_de_Israel_local_htb" b42ad524-4911-44ad-82b2-262565358794
+2021-06-16T16:23:33.044059000 4966.998662s info: Table 0047f3f6-2c79-48ee-8ed7-58487ec20dcb: Starting a new Raft election for term 1.
+2021-06-16T16:23:33.046472000 4967.001064s info: Table 0047f3f6-2c79-48ee-8ed7-58487ec20dcb: Added replica on this server.
+2021-06-16T16:23:33.085844000 4967.040436s info: Table 0047f3f6-2c79-48ee-8ed7-58487ec20dcb: This server is Raft leader for term 1. Latest log index is 0.
