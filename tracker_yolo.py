@@ -27,6 +27,7 @@ import os
 from utils.plots import plot_one_box
 import screenshot
 
+sender = imagezmq.ImageSender("tcp://*:{}".format(3000), REQ_REP=False)
 
 def pointInRect(point, rect):
     if point[0] > rect[0] and point[0] < rect[0]+rect[2] and point[1] > rect[1] and point[1] < rect[1]+rect[3]:
@@ -83,14 +84,17 @@ with open('config/config.json') as f:
 r = RethinkDB()
 r.connect(config['host_db'], config['port_db'], "SmartParking").repl()
 
+if config['log']:
+   print("RethinkDB Conect OK")
+ 
 # start streaming
-stream = Streaming(config['port_stream'])
+#stream = Streaming(config['port_stream'])
 
 print("1 - draw points in image")
 print("2 - start parking detection")
 
-option = input()
-
+#option = input()
+option = 2
 if option == '1':
     screenshot.drawPoints(config['input_video'], config['yaml_parking'])
 
@@ -132,8 +136,11 @@ if config['log']:
 	print("[INFO] Weights file "+config['weights'])
 
 #cap = cv2.VideoCapture(config['input_video'])
-vs = VideoStream(config['input_video']).start()
-
+vs = VideoStream(src="rtsp://admin:teste123!@10.7.20.60:554/Streaming/Channels/101",usePicamera=False, resolution=(1000,600)).start()
+#vs = VideoStream(src='http://131.95.3.162:80/mjpg/video.mjpg').start()
+#print(vs.read())
+time.sleep(2.0)
+print(config['input_video'])
 vid_path, vid_writer = None, None
 
 if config['log']:
@@ -148,6 +155,7 @@ parking_changed_count = [0]*len(parking_data)
 
 while True:
     frame = vs.read()
+    #print(frame)
     frame = imutils.resize(frame,width=1000, height=600)
 
     img = letterbox(frame, new_shape=512)[0]
@@ -219,7 +227,7 @@ while True:
     if config['parking_overlay']:
         for index, park in enumerate(parking_data):
             points = np.array(park['points'])
-            if parking_status[index] != None: color = (255,0,0)
+            if parking_status[index] != None: color = (0,0,255)
             else: color = (0,255,0)
             cv2.drawContours(frame, [points], contourIdx=-1, color=color, thickness=2, lineType=cv2.LINE_8)
             moments = cv2.moments(points)        
@@ -228,7 +236,7 @@ while True:
             cv2.putText(frame, str(park['id']), (centroid[0]-1, centroid[1]-1), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1, cv2.LINE_AA)
             cv2.putText(frame, str(park['id']), (centroid[0]+1, centroid[1]-1), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1, cv2.LINE_AA)
             cv2.putText(frame, str(park['id']), (centroid[0]-1, centroid[1]+1), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1, cv2.LINE_AA)
-            cv2.putText(frame, str(park['id']), centroid, cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 1, cv2.LINE_AA)
+            cv2.putText(frame, str(park['id']), centroid, cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,0,0), 1, cv2.LINE_AA)
 
     if config['save_video'] and vid_path != config['save_video_path']:  # new video
         vid_path = config['save_video_path']
@@ -250,7 +258,8 @@ while True:
     
     # streaming
     if config['stream_result']:
-        stream.send(frame)
+        ret_code, jpg_buffer = cv2.imencode(".jpg", frame, [int(cv2.IMWRITE_JPEG_QUALITY), 95])
+        sender.send_jpg("10.7.49.166", jpg_buffer)
 
     key = cv2.waitKey(1) & 0xFF
     # if the `q` key was pressed, break from the loop

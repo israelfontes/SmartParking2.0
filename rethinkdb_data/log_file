@@ -18,3 +18,110 @@
 2021-06-16T16:23:33.044059000 4966.998662s info: Table 0047f3f6-2c79-48ee-8ed7-58487ec20dcb: Starting a new Raft election for term 1.
 2021-06-16T16:23:33.046472000 4967.001064s info: Table 0047f3f6-2c79-48ee-8ed7-58487ec20dcb: Added replica on this server.
 2021-06-16T16:23:33.085844000 4967.040436s info: Table 0047f3f6-2c79-48ee-8ed7-58487ec20dcb: This server is Raft leader for term 1. Latest log index is 0.
+2021-07-05T09:46:44.508063132 0.072256s notice: Recursively removing directory /home/imd/sensor/SmartParking2.0/rethinkdb_data/tmp
+2021-07-05T09:46:44.736096869 0.300304s notice: Running rethinkdb 2.4.1 (GCC 4.8.5)...
+2021-07-05T09:46:44.743288317 0.307484s notice: Running on Linux 3.10.0-1127.19.1.el7.x86_64 x86_64
+2021-07-05T09:46:44.743390687 0.307583s notice: Loading data from directory /home/imd/sensor/SmartParking2.0/rethinkdb_data
+2021-07-05T09:46:44.906863406 0.471058s info: Automatically using cache size of 1977 MB
+2021-07-05T09:46:44.908870387 0.473062s notice: Listening for intracluster connections on port 29015
+2021-07-05T09:46:44.989170466 0.553363s notice: Listening for client driver connections on port 28015
+2021-07-05T09:46:44.989408019 0.553600s notice: Listening for administrative HTTP connections on port 8080
+2021-07-05T09:46:44.989460357 0.553652s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2021-07-05T09:46:44.989460967 0.553653s notice: Listening on driver addresses: 127.0.0.1, ::1
+2021-07-05T09:46:44.989461269 0.553653s notice: Listening on http addresses: 127.0.0.1, ::1
+2021-07-05T09:46:44.989486210 0.553678s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2021-07-05T09:46:44.989487144 0.553679s notice: Server ready, "MacBook_Pro_de_Israel_local_htb" b42ad524-4911-44ad-82b2-262565358794
+2021-07-05T09:46:46.788057720 2.352250s info: Table 0047f3f6-2c79-48ee-8ed7-58487ec20dcb: Starting a new Raft election for term 2.
+2021-07-05T09:46:46.917337219 2.481529s info: Table 0047f3f6-2c79-48ee-8ed7-58487ec20dcb: This server is Raft leader for term 2. Latest log index is 3.
+2021-07-05T09:47:05.678789881 21.242982s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2021-07-05T09:47:05.679162942 21.243355s notice: Shutting down client connections...
+2021-07-05T09:47:05.679306789 21.243499s notice: All client connections closed.
+2021-07-05T09:47:05.679312674 21.243504s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2021-07-05T09:47:05.683332082 21.247524s notice: Storage engine shut down.
+2021-07-05T09:47:08.913176805 0.066637s notice: Running rethinkdb 2.4.1 (GCC 4.8.5)...
+2021-07-05T09:47:08.919547202 0.072989s notice: Running on Linux 3.10.0-1127.19.1.el7.x86_64 x86_64
+2021-07-05T09:47:08.919630649 0.073070s notice: Loading data from directory /home/imd/sensor/SmartParking2.0/rethinkdb_data
+2021-07-05T09:47:09.312722153 0.466164s info: Automatically using cache size of 1975 MB
+2021-07-05T09:47:09.314866665 0.468306s notice: Listening for intracluster connections on port 29015
+2021-07-05T09:47:09.343529114 0.496968s notice: Listening for client driver connections on port 28015
+2021-07-05T09:47:09.343655930 0.497095s notice: Listening for administrative HTTP connections on port 8080
+2021-07-05T09:47:09.343656753 0.497096s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2021-07-05T09:47:09.343657266 0.497096s notice: Listening on driver addresses: 127.0.0.1, ::1
+2021-07-05T09:47:09.343668410 0.497107s notice: Listening on http addresses: 127.0.0.1, ::1
+2021-07-05T09:47:09.343668975 0.497108s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2021-07-05T09:47:09.343676568 0.497116s notice: Server ready, "MacBook_Pro_de_Israel_local_htb" b42ad524-4911-44ad-82b2-262565358794
+2021-07-05T09:47:12.963748727 4.117188s info: Table 0047f3f6-2c79-48ee-8ed7-58487ec20dcb: Starting a new Raft election for term 3.
+2021-07-05T09:47:13.022043356 4.175483s info: Table 0047f3f6-2c79-48ee-8ed7-58487ec20dcb: This server is Raft leader for term 3. Latest log index is 7.
+2021-07-05T12:24:00.453621673 0.032026s notice: Running rethinkdb 2.4.1 (GCC 4.8.5)...
+2021-07-05T12:24:00.471899686 0.050287s notice: Running on Linux 3.10.0-1127.19.1.el7.x86_64 x86_64
+2021-07-05T12:24:00.472005624 0.050389s notice: Loading data from directory /home/imd/sensor/SmartParking2.0/rethinkdb_data
+2021-07-05T12:24:00.807771674 0.386158s info: Automatically using cache size of 2084 MB
+2021-07-05T12:24:00.809966974 0.388351s notice: Listening for intracluster connections on port 29015
+2021-07-05T12:24:00.916204080 0.494588s notice: Listening for client driver connections on port 28015
+2021-07-05T12:24:00.916373820 0.494758s notice: Listening for administrative HTTP connections on port 8080
+2021-07-05T12:24:00.916379218 0.494763s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2021-07-05T12:24:00.916383264 0.494767s notice: Listening on driver addresses: 127.0.0.1, ::1
+2021-07-05T12:24:00.916407541 0.494791s notice: Listening on http addresses: 127.0.0.1, ::1
+2021-07-05T12:24:00.916411738 0.494795s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2021-07-05T12:24:00.916416259 0.494800s notice: Server ready, "MacBook_Pro_de_Israel_local_htb" b42ad524-4911-44ad-82b2-262565358794
+2021-07-05T12:24:02.063069717 1.641453s info: Table 0047f3f6-2c79-48ee-8ed7-58487ec20dcb: Starting a new Raft election for term 4.
+2021-07-05T12:24:02.401138972 1.979523s info: Table 0047f3f6-2c79-48ee-8ed7-58487ec20dcb: This server is Raft leader for term 4. Latest log index is 11.
+2021-07-05T12:24:09.152700431 8.731084s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2021-07-05T12:24:09.153101947 8.731486s notice: Shutting down client connections...
+2021-07-05T12:24:09.153222160 8.731606s notice: All client connections closed.
+2021-07-05T12:24:09.153228620 8.731612s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2021-07-05T12:24:09.157812270 8.736196s notice: Storage engine shut down.
+2021-07-05T12:24:15.271478219 0.016207s notice: Running rethinkdb 2.4.1 (GCC 4.8.5)...
+2021-07-05T12:24:15.276817211 0.021539s notice: Running on Linux 3.10.0-1127.19.1.el7.x86_64 x86_64
+2021-07-05T12:24:15.276953958 0.021673s notice: Loading data from directory /home/imd/sensor/SmartParking2.0/rethinkdb_data
+2021-07-05T12:24:15.766413705 0.511136s info: Automatically using cache size of 2093 MB
+2021-07-05T12:24:15.768124957 0.512844s notice: Listening for intracluster connections on port 29015
+2021-07-05T12:24:15.787385660 0.532105s notice: Listening for client driver connections on port 28015
+2021-07-05T12:24:15.787559774 0.532279s notice: Listening for administrative HTTP connections on port 8080
+2021-07-05T12:24:15.787560617 0.532280s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2021-07-05T12:24:15.787560947 0.532280s notice: Listening on driver addresses: 127.0.0.1, ::1
+2021-07-05T12:24:15.787561230 0.532280s notice: Listening on http addresses: 127.0.0.1, ::1
+2021-07-05T12:24:15.787573859 0.532293s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2021-07-05T12:24:15.787574293 0.532293s notice: Server ready, "MacBook_Pro_de_Israel_local_htb" b42ad524-4911-44ad-82b2-262565358794
+2021-07-05T12:24:19.346228171 4.090948s info: Table 0047f3f6-2c79-48ee-8ed7-58487ec20dcb: Starting a new Raft election for term 5.
+2021-07-05T12:24:19.724924462 4.469644s info: Table 0047f3f6-2c79-48ee-8ed7-58487ec20dcb: This server is Raft leader for term 5. Latest log index is 15.
+2021-07-05T12:29:58.962752421 343.707472s info: Table 8fbaed2c-e040-41a8-a2d6-ed8874c02127: Starting a new Raft election for term 1.
+2021-07-05T12:29:58.963950322 343.708670s info: Table 8fbaed2c-e040-41a8-a2d6-ed8874c02127: Added replica on this server.
+2021-07-05T12:29:59.001318849 343.746038s info: Table 8fbaed2c-e040-41a8-a2d6-ed8874c02127: This server is Raft leader for term 1. Latest log index is 0.
+2021-07-05T14:14:23.517745026 0.131626s notice: Running rethinkdb 2.4.1 (GCC 4.8.5)...
+2021-07-05T14:14:23.612471058 0.226328s notice: Running on Linux 3.10.0-1127.19.1.el7.x86_64 x86_64
+2021-07-05T14:14:23.644043040 0.257898s notice: Loading data from directory /home/imd/sensor/SmartParking2.0/rethinkdb_data
+2021-07-05T14:14:24.219264924 0.833122s info: Automatically using cache size of 2092 MB
+2021-07-05T14:14:24.221477736 0.835332s notice: Listening for intracluster connections on port 29015
+2021-07-05T14:14:24.258777620 0.872632s notice: Listening for client driver connections on port 28015
+2021-07-05T14:14:24.258952466 0.872807s notice: Listening for administrative HTTP connections on port 8080
+2021-07-05T14:14:24.258953346 0.872807s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2021-07-05T14:14:24.258953674 0.872808s notice: Listening on driver addresses: 127.0.0.1, ::1
+2021-07-05T14:14:24.258970641 0.872825s notice: Listening on http addresses: 127.0.0.1, ::1
+2021-07-05T14:14:24.258975276 0.872830s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2021-07-05T14:14:24.258987914 0.872842s notice: Server ready, "MacBook_Pro_de_Israel_local_htb" b42ad524-4911-44ad-82b2-262565358794
+2021-07-05T14:14:25.801841320 2.415696s info: Table 0047f3f6-2c79-48ee-8ed7-58487ec20dcb: Starting a new Raft election for term 6.
+2021-07-05T14:14:25.947244074 2.561098s info: Table 0047f3f6-2c79-48ee-8ed7-58487ec20dcb: This server is Raft leader for term 6. Latest log index is 20.
+2021-07-05T14:14:26.035857557 2.649712s info: Table 8fbaed2c-e040-41a8-a2d6-ed8874c02127: Starting a new Raft election for term 2.
+2021-07-05T14:14:26.096279019 2.710133s info: Table 8fbaed2c-e040-41a8-a2d6-ed8874c02127: This server is Raft leader for term 2. Latest log index is 3.
+2021-07-05T14:14:45.709963204 22.323818s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2021-07-05T14:14:45.710331179 22.324185s notice: Shutting down client connections...
+2021-07-05T14:14:45.710424519 22.324279s notice: All client connections closed.
+2021-07-05T14:14:45.710430769 22.324285s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2021-07-05T14:14:45.718679042 22.332533s notice: Storage engine shut down.
+2021-07-05T14:14:49.513322849 0.020322s notice: Running rethinkdb 2.4.1 (GCC 4.8.5)...
+2021-07-05T14:14:49.533640741 0.040638s notice: Running on Linux 3.10.0-1127.19.1.el7.x86_64 x86_64
+2021-07-05T14:14:49.647632542 0.154627s notice: Loading data from directory /home/imd/sensor/SmartParking2.0/rethinkdb_data
+2021-07-05T14:14:49.824303521 0.331301s info: Automatically using cache size of 2096 MB
+2021-07-05T14:14:49.826090716 0.333085s notice: Listening for intracluster connections on port 29015
+2021-07-05T14:14:49.862141555 0.369136s notice: Listening for client driver connections on port 28015
+2021-07-05T14:14:49.862232510 0.369227s notice: Listening for administrative HTTP connections on port 8080
+2021-07-05T14:14:49.862255250 0.369250s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2021-07-05T14:14:49.862263845 0.369258s notice: Listening on driver addresses: 127.0.0.1, ::1
+2021-07-05T14:14:49.862270219 0.369265s notice: Listening on http addresses: 127.0.0.1, ::1
+2021-07-05T14:14:49.862286851 0.369281s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2021-07-05T14:14:49.862294021 0.369289s notice: Server ready, "MacBook_Pro_de_Israel_local_htb" b42ad524-4911-44ad-82b2-262565358794
+2021-07-05T14:14:51.072760167 1.579755s info: Table 8fbaed2c-e040-41a8-a2d6-ed8874c02127: Starting a new Raft election for term 3.
+2021-07-05T14:14:51.099603567 1.606598s info: Table 8fbaed2c-e040-41a8-a2d6-ed8874c02127: This server is Raft leader for term 3. Latest log index is 7.
+2021-07-05T14:14:51.508999585 2.015994s info: Table 0047f3f6-2c79-48ee-8ed7-58487ec20dcb: Starting a new Raft election for term 7.
+2021-07-05T14:14:52.136349753 2.643344s info: Table 0047f3f6-2c79-48ee-8ed7-58487ec20dcb: This server is Raft leader for term 7. Latest log index is 24.
