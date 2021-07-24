@@ -1,4 +1,6 @@
 .DS_Store
-videos
-rethink_data
+videos/
+rethink_data/
+nohup.out
+yolov5s.pt
 __pycache__
